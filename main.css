@@ -1,6 +1,18 @@
 h1
 {
+    position: relative;
     text-align: center;
+    animation-name: move-left;
+    animation-duration: 5s;
+}
+@keyframes move-left{
+    from{
+        left:300px;
+
+    }
+    to{
+        left:300px;
+    }
 }
 body{
     background-color: aquamarine;
@@ -26,13 +38,20 @@ body{
     height: 35vh;
     width:20vw;
     justify-content: space-evenly;
+    box-shadow: 1px 1px rgb(98, 185, 214);
+    transition: box-shadow ease-in 1s;
 
 
 }
+.item:hover{
+    
+    box-shadow: 4px 4px black;
+    /* transition: box-shadow .3s; */
+}
 .img-container
 {
-    justify-content: flex-start;
-height:17vh;
+     justify-content: flex-start;
+     height:17vh;
 }
 .skill-name
 {
